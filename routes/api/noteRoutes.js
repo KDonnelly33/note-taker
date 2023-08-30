@@ -1,17 +1,17 @@
 // imports router and uuid
 const router = require("express").Router();
-const uuid = require("../../helper/uuid.js");
+const uuid = require(__dirname + "/../../helper/uuid.js");
 //loclahost:3001/api/notes
 const fs = require("fs");
 const path = require("path");
 const {
   readAndAppend,
-} = require("../../helper/fsutils.js");
+} = require(__dirname + "/../../helper/fsUtils.js");
 // get all notes
 router.get("/", (req, res) => {
   console.log("HIT MY API NOTES READ ENPOITN");
   console.log(__dirname);
-//   reads the db.json file and returns all saved notes as JSONs
+//   reads the db.json file and returns all saved notes as JSON
   const notes = fs.readFileSync(
     path.join(__dirname, "../../db/db.json"),
     "utf-8"
