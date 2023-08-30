@@ -12,5 +12,8 @@
   "devDependencies": {},
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "engine": {
+    "node": "18.17.0"
+  }
 }
