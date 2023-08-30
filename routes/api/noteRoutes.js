@@ -11,7 +11,7 @@ const {
 router.get("/", (req, res) => {
   console.log("HIT MY API NOTES READ ENPOITN");
   console.log(__dirname);
-//   reads the db.json file and returns all saved notes as JSONd
+//   reads the db.json file and returns all saved notes as JSON
   const notes = fs.readFileSync(
     path.join(__dirname, "../../db/db.json"),
     "utf-8"
