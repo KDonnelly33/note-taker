@@ -4,7 +4,7 @@ const express = require('express');
 // creates express server
 const app = express();  
 // set port
-const PORT = 3001;
+const PORT = process.env.PORT || 3001; 
 // parse incoming string or array data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
