@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 const {
   readAndAppend,
-} = require("../../helper/fsutils.js");
+} = require("../../helper/fsUtils.js");
 // get all notes
 router.get("/", (req, res) => {
   console.log("HIT MY API NOTES READ ENPOITN");
