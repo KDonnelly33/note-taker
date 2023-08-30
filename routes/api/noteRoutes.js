@@ -3,8 +3,8 @@ const router = require("express").Router();
 //loclahost:3001/api/notes
 const fs = require("fs");
 const path = require("path");
-const uuid = require("../../helpers/uuid");
-const {readAndAppend} = require("../../helpers/fsUtils");
+const uuid = require("../../helpers/uuid.js");
+const {readAndAppend} = require("../../helpers/fsUtils.js");
 // get all notes
 router.get("/", (req, res) => {
   console.log("HIT MY API NOTES READ ENPOITN");
